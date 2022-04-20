@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load cache %}
+ <!-- Title -->
+<title>{% block title %}Team{% endblock %}</title>
+    {% block header %}
+    {% endblock %}
+    {% block content %}
+
+     <!-- ##### Welcome Area Start ##### -->
+     <div class="breadcumb-area clearfix dzsparallaxer auto-init" data-options='{direction: "normal"}'>
+        <div class="divimage dzsparallaxer--target" style="width: 101%; height: 130%; background-image: url(/static/img/bg-img/bg-2.jpg)"></div>
+        <!-- breadcumb content -->
+        <div class="breadcumb-content">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb" class="breadcumb--con text-center">
+                            <h2 class="w-text title wow fadeInUp" data-wow-delay="0.2s">Team</h2>
+                            <ol class="breadcrumb justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Team</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Welcome Area End ##### -->
+
+
+ <!-- ##### team Area Start ##### -->
+ <div class="striples-bg">
+        
+    <!-- ##### Team Area Start ##### -->
+    <section class="our_team_area section-padding-100-70 clearfix" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <!-- Dream Dots -->
+                        <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                            <span>Our Creative Team</span>
+                        </div>
+                        <h2 class="fadeInUp" data-wow-delay="0.3s">Our Awesome Team</h2>
+                        <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="our-team ico-team">
+                        <div class="team_img">
+                            <img src="{% static 'img/team-img/member1.png'%}" class="mt-30 width-80" alt="chef-1">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h4 class="title">Randy crishen</h4>
+                            <span class="post">Company CEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="our-team ico-team">
+                        <div class="team_img">
+                            <img src="{% static 'img/team-img/member2.png'%}" class="mt-30 width-80" alt="chef-1">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h4 class="title">Monica Ashker</h4>
+                            <span class="post">Web Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="our-team ico-team">
+                        <div class="team_img">
+                            <img src="{% static 'img/team-img/member3.png'%}" class="mt-30 width-80" alt="chef-1">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h4 class="title">Tollay Ramzomi</h4>
+                            <span class="post">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="our-team ico-team">
+                        <div class="team_img">
+                            <img src="{% static 'img/team-img/member4.png'%}" class="mt-30 width-80" alt="chef-1">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h4 class="title">Jacke Wilson</h4>
+                            <span class="post">Marketing Specialist</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="our-team ico-team">
+                        <div class="team_img">
+                            <img src="{% static 'img/team-img/member1.png'%}" class="mt-30 width-80" alt="chef-1">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h4 class="title">Randy crishen</h4>
+                            <span class="post">Company CEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="our-team ico-team">
+                        <div class="team_img">
+                            <img src="{% static 'img/team-img/member2.png'%}" class="mt-30 width-80" alt="chef-1">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h4 class="title">Monica Ashker</h4>
+                            <span class="post">Web Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="our-team ico-team">
+                        <div class="team_img">
+                            <img src="{% static 'img/team-img/member3.png'%}" class="mt-30 width-80" alt="chef-1">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h4 class="title">Tollay Ramzomi</h4>
+                            <span class="post">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Team Member -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                   <div class="our-team ico-team">
+                        <div class="team_img">
+                            <img src="{% static 'img/team-img/member4.png'%}" class="mt-30 width-80" alt="chef-1">
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-content">
+                            <h4 class="title">Jacke Wilson</h4>
+                            <span class="post">Marketing Specialist</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Team Area End ##### -->
+<!-- ##### team Area End ##### -->
+{% endblock %}
+{% block footer %}
+{% endblock %}

@@ -1,0 +1,344 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load cache %}
+
+<title>{% block title %}NLP{% endblock %}</title>
+    {% block header %}
+    {% endblock %}
+    {% block content %}
+    <!-- Title -->
+  
+    <!-- ##### Welcome Area Start ##### -->
+    <section class="hero-section ico-bg4 relative section-padding" id="home">
+
+        <div class="hero-section-content">
+            
+            <div class="container h-100">
+                <div class="row h-100 mb-50 align-items-center">
+
+                    <!-- Welcome Content -->
+                    <div class="col-12 col-lg-6 col-md-12">
+                        <div class="welcome-content">
+                            <div class="promo-section">
+                                <h3 class="special-head gradient-text cyan">Make your life Easier & Comfortable with NLP</h3>
+                            </div>
+                            <h1 class="w-text wow fadeInUp" data-wow-delay="0.2s">Powerful (NLP) NATURAL LANGUAGE PROCESSING Using AI Technology</h1>
+                            <p class="g-text wow fadeInUp" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae soluta, dignissimos aut, assumenda dolore totam natus qui cum vel omnis voluptates.</p>
+                            <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="#" class="btn more-btn mr-3">contact us</a>
+                                <a href="#" class="btn more-btn video-demo-prev"> Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Welcome Area End ##### -->
+
+
+    <div class="clearfix"></div>
+
+
+    <section class="section-padding-0-0 relative clearfix margined">
+    <div class="container">
+        <div class="has-shadow agency-sec">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="services-block-four v2">
+                        <div class="inner-box">
+                            <div class="icon-img-box">
+                                <img src="{%static 'img/features/f1.svg'%}" alt="">
+                            </div>
+                            <h3><a href="#">Powered by Google's Machine Learning</a></h3>
+                            <div class="text">Lorem ipsum dolor sit amet, conse ctetur dolor adipisicing elit.</div>
+                            
+                            <div class="side-feature-list-item v2 ">
+                                <i class="fa fa-check check-mark-icon-font" aria-hidden="true"></i>
+                                <div class="foot-c-info">All PHP Apps Supported</div>
+                            </div>
+                            <div class="side-feature-list-item v2 ">
+                                <i class="fa fa-check check-mark-icon-font" aria-hidden="true"></i>
+                                <div class="foot-c-info">Innovative Control Panel</div>
+                            </div>
+                            <div class="side-feature-list-item v2 ">
+                                <i class="fa fa-check check-mark-icon-font" aria-hidden="true"></i>
+                                <div class="foot-c-info">Unlimited Applications</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="services-block-four v2">
+                        <div class="inner-box">
+                            <div class="icon-img-box">
+                                <img src="{%static 'img/features/f2.svg'%}" alt="">
+                            </div>
+                            <h3><a href="#">Built on Google Infrastructure</a></h3>
+                            <div class="text">Lorem ipsum dolor sit amet, conse ctetur dolor adipisicing elit.</div>
+                            <div class="side-feature-list-item v2 ">
+                                <i class="fa fa-check check-mark-icon-font" aria-hidden="true"></i>
+                                <div class="foot-c-info">All PHP Apps Supported</div>
+                            </div>
+                            <div class="side-feature-list-item v2 ">
+                                <i class="fa fa-check check-mark-icon-font" aria-hidden="true"></i>
+                                <div class="foot-c-info">Innovative Control Panel</div>
+                            </div>
+                            <div class="side-feature-list-item v2 ">
+                                <i class="fa fa-check check-mark-icon-font" aria-hidden="true"></i>
+                                <div class="foot-c-info">Unlimited Applications</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="services-block-four v2">
+                        <div class="inner-box">
+                            <div class="icon-img-box">
+                                <img src="{%static 'img/features/f3.svg'%}" alt="">
+                            </div>
+                            <h3><a href="#">Optimized for the Google Assistant</a></h3>
+                            <div class="text">Lorem ipsum dolor sit amet, conse ctetur dolor adipisicing elit.</div>
+                            <div class="side-feature-list-item v2 ">
+                                <i class="fa fa-check check-mark-icon-font" aria-hidden="true"></i>
+                                <div class="foot-c-info">All PHP Apps Supported</div>
+                            </div>
+                            <div class="side-feature-list-item v2 ">
+                                <i class="fa fa-check check-mark-icon-font" aria-hidden="true"></i>
+                                <div class="foot-c-info">Innovative Control Panel</div>
+                            </div>
+                            <div class="side-feature-list-item v2 ">
+                                <i class="fa fa-check check-mark-icon-font" aria-hidden="true"></i>
+                                <div class="foot-c-info">Unlimited Applications</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <!-- ##### About Us Area Start ##### -->
+    <section class="section-padding-100-70 clearfix relative cir-left" id="about">
+        
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 offset-lg-0 col-md-12 no-padding-left">
+                    <img class="img-responsive" src="{%static 'img/core-img/about.png'%}" alt="">
+                </div>
+                
+                <div class="col-12 col-lg-6 offset-lg-0">
+                    <div class="who-we-contant mt-s">
+                        <div class="dream-dots text-left fadeInUp" data-wow-delay="0.2s">
+                            <span class="gradient-text blue">We are the experts you exactly need</span>
+                        </div>
+                        <h4 class="fadeInUp" data-wow-delay="0.3s">We are a Machine Learning Consulting Firm Experienced in AI</h4>
+                        <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit eum illum tempora? Ducimus eum culpa voluptates dolorem dolorum et sit nisi, mollitia animi porro fuga sequi, molestias repellat excepturi nobis eum culpa voluptates dolorem dolorum et.</p>
+                        <div class="services-block-four v2 mt-30">
+                            <div class="inner-box">
+                                <div class="icon-font-box">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <h3><a href="#">Powerfull Mobile And Online App</a></h3>
+                                <div class="text width-80">Lorem ipsum dolor sit amet, conse ctetur dolor adipisicing elit alias officia aperiam.</div>
+                            </div>
+                        </div>
+                        <div class="services-block-four v2">
+                            <div class="inner-box">
+                                <div class="icon-font-box">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <h3><a href="#">Brings More Transparency And Speed</a></h3>
+                                <div class="text width-80">Lorem ipsum dolor sit amet, conse ctetur dolor adipisicing elit alias officia aperiam.</div>
+                            </div>
+                        </div>
+                        <div class="services-block-four v2">
+                            <div class="inner-box">
+                                <div class="icon-font-box">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <h3><a href="#">Special For Multiple Use Capabilities</a></h3>
+                                <div class="text width-80">Lorem ipsum dolor sit amet, conse ctetur dolor adipisicing elit alias officia aperiam.</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### About Us Area End ##### -->
+
+    <section class="section-padding-100-70 relative sky-bg" id="feat">
+        <div class="container">
+            
+            <div class="section-heading text-center">
+                <!-- Dream Dots -->
+                <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                    <span class="gradient-text blue">How Neuron Natural Language Works</span>
+
+                </div>
+                <h2 class="fadeInUp" data-wow-delay="0.3s"> Develop a Powerful NLP Application That Includes</h2>
+                <!-- <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p> -->
+            </div>
+                
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-left mb-100 fadeInUp" data-wow-delay="0.2s">
+                        <h6>Machine Learning</h6>
+                        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nulla neque quam, maxi ut ac cu msan ut, posuere sit Lorem ipsum qu.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-left mb-100 fadeInUp" data-wow-delay="0.3s">
+                        <h6>Semantic Search</h6>
+                        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nulla neque quam, maxi ut ac cu msan ut, posuere sit Lorem ipsum qu.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-left mb-100 fadeInUp" data-wow-delay="0.4s">
+                        <h6>Speech Recognition</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit. Nulla neque quam, maxi ut ac cu msan ut, posuere sit Lorem ipsum qu.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-left mb-100 fadeInUp" data-wow-delay="0.2s">
+                        <h6>Information Extraction</h6>
+                        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nulla neque quam, maxi ut ac cu msan ut, posuere sit Lorem ipsum qu.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-left mb-100 fadeInUp" data-wow-delay="0.3s">
+                        <h6>Machine Translation</h6>
+                        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nulla neque quam, maxi ut ac cu msan ut, posuere sit Lorem ipsum qu.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Content -->
+                    <div class="service_single_content text-left mb-100 fadeInUp" data-wow-delay="0.4s">
+                        <h6>Question Answering</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur elit. Nulla neque quam, maxi ut ac cu msan ut, posuere sit Lorem ipsum qu.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="our-partners clearfix section-padding-0-70">
+        <div class="container">
+            <div class="section-heading text-center">
+                <!-- Dream Dots -->
+                <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                    <span>Our Main Features</span>
+                </div>
+               
+                <h2 class="fadeInUp" data-wow-delay="0.3s">We Provide Some Speciality Our Neuron NLP</h2>
+                <!-- <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo. </p> -->
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member ">
+                        <div class="team-img">
+                            <img class="img-responsive center-block" src="{%static 'img/VE.JPG'%}" alt="">
+                            <p>Vocabulary Expansion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member ">
+                        <div class="team-img">
+                            <img class="img-responsive center-block" src="{%static 'img/tenses.JPG'%}" alt="">
+                            <p>Tense of the Verbs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member ">
+                        <div class="team-img">
+                            <img class="img-responsive center-block" src="{%static 'img/pre.JPG'%}" alt="">
+                            <p>Predefined Synonyms</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member ">
+                        <div class="team-img">
+                            <img class="img-responsive center-block" src="{%static 'img/cap.JPG'%}" alt="">
+                            <p>Capitalization</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member ">
+                        <div class="team-img">
+                            <img class="img-responsive center-block" src="{%static 'img/contr.JPG'%}" alt="">
+                            <p>Contractions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6   col-xs-12">
+                    <div class="team-member ">
+                        <div class="team-img">
+                            <img class="img-responsive center-block" src="{%static 'img/msgs.JPG'%}" alt="">
+                            <p>Message Personalization</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member ">
+                        <div class="team-img">
+                            <img class="img-responsive center-block" src="{%static 'img/digit.JPG'%}" alt="">
+                            <p>Digit vs Numeric Words</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member ">
+                        <div class="team-img">
+                            <img class="img-responsive center-block" src="{%static 'img/VT.JPG'%}" alt="">
+                            <p>Vocabulary Transfer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="img-responsive" src="{%static 'img/nlp_pro.JPG'%}" alt="">
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+{% endblock %}
+{% block footer %}
+{% endblock %}

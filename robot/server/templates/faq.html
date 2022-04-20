@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load cache %}
+
+
+<title>{% block title %}FAQ{% endblock %}</title>
+    {% block header %}
+    {% endblock %}
+    {% block content %}
+    <!-- ##### Welcome Area Start ##### -->
+    <div class="breadcumb-area clearfix dzsparallaxer auto-init" data-options='{direction: "normal"}'>
+        <div class="divimage dzsparallaxer--target" style="width: 101%; height: 130%; background-image: url(/static/img/bg-img/bg-2.jpg)"></div>
+        <!-- breadcumb content -->
+        <div class="breadcumb-content">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb" class="breadcumb--con text-center">
+                            <h2 class="w-text title wow fadeInUp" data-wow-delay="0.2s">FAQ Questions</h2>
+                            <ol class="breadcrumb justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Welcome Area End ##### -->
+
+    <div class="faq-timeline-area transparent section-padding-100-85" id="faq">
+        <div class="container">
+            <div class="section-heading text-center">
+                <!-- Dream Dots -->
+                <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                    <span>Our FAQ</span>
+                </div>
+                <h2 class="fadeInUp" data-wow-delay="0.3s">What are the main AI technologies?</h2>
+                <p class="fadeInUp" data-wow-delay="0.4s">Natural language generation, speech recognition, virtual agents, machine learning platforms, AI optimized hardware, decision management, deep learning platforms, bio metrics, robotics automation, text analysis, cyber defense, compliance, knowledge worker aid, content creation, emotion recognition, image recognition and marketing automation.</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <img class="img-responsive" src="{% static 'img/core-img/0faq.png' %}" alt="">
+                </div>
+                <div class="col-12 col-lg-6 col-md-12">
+                    <div class="dream-faq-area mt-s ">
+                        <dl style="margin-bottom:0">
+                              <!-- Single FAQ Area -->
+                              <dt class="wave fadeInUp" data-wow-delay="0.2s">What is Artificial Intelligence (AI)?</dt>
+                              <dd class="fadeInUp" data-wow-delay="0.3s">
+                                  <p>Artificial Intelligence (AI) is a computer science field dealing with the creation of intelligent machines that work and react like humans.</p>
+                              </dd>
+                                <!-- Single FAQ Area -->
+                            <dt class="wave fadeInUp" data-wow-delay="0.2s">What is deep learning with AI?</dt>
+                            <dd class="fadeInUp" data-wow-delay="0.3s">
+                                <p>Deep learning uses a certain set of machine learning algorithms that run in multiple layers.</p>
+                            </dd>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave fadeInUp" data-wow-delay="0.2s">Can artificial intelligence compete with human intelligence?</dt>
+                            <dd class="fadeInUp" data-wow-delay="0.3s">
+                                <p>"People will always be faster to adjust than computers, because that's what humans are optimized to do."</p>
+                            </dd>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave fadeInUp" data-wow-delay="0.3s">What are the advantages of Natural Language Processing?</dt>
+                            <dd>
+                                <p>NLP is a way for computers to analyse, understand and derive meaning from human language in a smart and useful way.</p>
+                            </dd>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave fadeInUp" data-wow-delay="0.4s">What are the dangers of artificial intelligence?</dt>
+                            <dd>
+                                <p>Dangers include having control of critical infrastructure like the power grid and going out of control or being hacked.</p>
+                            </dd>
+                            <!-- Single FAQ Area -->
+                            <dt class="wave fadeInUp" data-wow-delay="0.5s">What is the future of artificial intelligence?</dt>
+                            <dd>
+                                <p>Automated transport, taking over dangerous jobs, robots working with humans, improved elderly care, cyborg (organic/bio-mechanic) organisms, environment monitoring and response for climate change goals.</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    {% block footer %}
+    {% endblock %}

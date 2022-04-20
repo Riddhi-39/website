@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load cache %}
+ <!-- Title -->
+<title>{% block title %}Register{% endblock %}</title>
+    {% block header %}
+    {% endblock %}
+    {% block content %}
+
+    <!-- ##### Welcome Area Start ##### -->
+    <div class="breadcumb-area clearfix dzsparallaxer auto-init" data-options='{direction: "normal"}'>
+        <div class="divimage dzsparallaxer--target" style="width: 101%; height: 130%; background-image: url(img/bg-img/bg-2.jpg)"></div>
+        <!-- breadcumb content -->
+        <div class="breadcumb-content">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb" class="breadcumb--con text-center">
+                            <h2 class="w-text title wow fadeInUp" data-wow-delay="0.2s">Registration</h2>
+                            <ol class="breadcrumb justify-content-center wow fadeInUp" data-wow-delay="0.4s">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Registration</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Welcome Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="section-padding-100 contact_us_area" id="contact">
+        <div class="container">
+            <section class="about-us-area ico-about-bg section-padding-100-70 clearfix">
+                <div class="bub-right" id="feat">
+                    <div class="container">
+                        
+                        <div class="section-heading text-center">
+                            <!-- Dream Dots -->
+                            <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                                <span class="gradient-text blue">Registration</span>
+                            </div>
+                            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="contact_form">
+                        <form action="#" method="post" id="main_contact_form" novalidate>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="success_fail_info"></div>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.2s">
+                                        <input type="text" name="name" id="name" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Username</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.3s">
+                                        <input type="text" name="email" id="email" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Email</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-md-6">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.2s">
+                                        <input type="text" name="name" id="name" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Password</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.3s">
+                                        <input type="text" name="email" id="email" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Confirm Password</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.4s">
+                                        <input type="text" name="subject" id="subject" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.5s">
+                                        <textarea name="message" id="message" required></textarea>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Address</label>
+                                    </div>
+                                </div>
+        
+                                        <label>
+                                            <span class="checkmark"></span><input class="checkbox" type="checkbox" name="agreement" required=""> I agree the User Agreement and <a class="condition" href="#">Terms &amp; Condition.</a>
+                                        </label>
+                                
+                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.6s">
+                                    <button type="submit" class="btn dream-btn">Create Account</button>
+                                </div>
+                                &nbsp;
+                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.6s">Or with Signup</div>
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.6s">
+                                 <a class="condition" href="#">FACEBOOK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a class="condition" href="#">Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   <a class="condition" href="#">GOOGLE+</a>&nbsp;
+                                </div> 
+                                   &nbsp;
+                                   &nbsp;
+                                   &nbsp;
+                                   &nbsp;
+                                   &nbsp;
+                                   &nbsp;
+                                   &nbsp;
+                                   <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.6s">have an account? <a class="condition" href="#">Login</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+    {% endblock %}
+    {% block footer %}
+    {% endblock %}
